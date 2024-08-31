@@ -11,7 +11,5 @@ function themeFiles() {
     
     wp_register_style('style', get_stylesheet_directory_uri() . '/assets/css/main.min.css', array(), ASSETS_VERSION, 'screen');
     wp_enqueue_style('style');
-
-    enqueueTargetAssets(getTargetType());
 }
 add_action('wp_enqueue_scripts', 'themeFiles');
